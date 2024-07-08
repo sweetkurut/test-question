@@ -1,6 +1,6 @@
 const CURRENT_YEAR = 2024;
 const CORRECT_ANSWER = "Ответ правильный";
-const ERROR_ANSWER = "Ответ неправильный"; // Corrected typo
+const ERROR_ANSWER = "Ответ неправильный";
 
 const input = document.querySelector(".input");
 const btn = document.querySelector(".btn");
@@ -14,11 +14,11 @@ btn.addEventListener("click", () => {
   }
 
   const answer = Number(input.value);
-  let result = CORRECT_ANSWER; // Renamed variable to avoid conflict
+  let result = CORRECT_ANSWER;
 
   if (answer !== CURRENT_YEAR) {
     result = ERROR_ANSWER;
   }
 
-  output.innerHTML = result; // Use the result variable
+  output.innerHTML = result;
 });
